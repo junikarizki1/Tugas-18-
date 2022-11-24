@@ -9,18 +9,20 @@ int main() {
     biayaPerSks = 115000;
 
     cout <<"Program Menghitung Biaya Kuliah Mahasiswa\n";
-    cout <<"==========================================\n";
+    cout <<"==========================================================\n";
     cout <<"By : Junika Rizki\n\n";
     cout <<"Masukkan Jumlah Sks ";
     cin >>jmlSks;
     ttlBiayaSks = jmlSks * biayaPerSks;
     ttlBiayaKuliah = bpp+  dMahasiswa + ttlBiayaSks;
     cout <<setprecision(10);
+    cout <<"==========================================================\n";
     cout <<"BPP = Rp."<<bpp<<endl;
     cout <<"Dana Kemahasiswaan = Rp."<<dMahasiswa<<endl;
     cout <<"Jumlah Sks Mahasiswa = "<<jmlSks <<" Sks"<<endl;
     cout <<"Biaya Per Sks = Rp."<<biayaPerSks<<endl;
     cout <<"Total Biaya Sks Mahasiswa = Rp."<<ttlBiayaSks <<endl;
+    cout <<"==========================================================\n";
     cout <<"Total Biaya Kuliah Mahasiswa = Rp."<<ttlBiayaKuliah <<endl;
     return 0;
 
