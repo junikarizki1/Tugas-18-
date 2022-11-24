@@ -7,10 +7,11 @@ int main() {
     double jmlSks, dMahasiswa, biayaPerSks, ttlBiayaSks, ttlBiayaKuliah;
     dMahasiswa = 200000;
     biayaPerSks = 115000;
-
+    
+    cout <<"<!--Soal No. 1-->\n";
     cout <<"Program Menghitung Biaya Kuliah Mahasiswa\n";
     cout <<"==========================================================\n";
-    cout <<"By : Junika Rizki\n\n";
+    cout <<"Created By : Junika Rizki\n\n";
     cout <<"Masukkan Jumlah Sks ";
     cin >>jmlSks;
     ttlBiayaSks = jmlSks * biayaPerSks;
