@@ -3,28 +3,32 @@
 using namespace std;
 
 int main() {
-
-    int berat;
-    double biayaPerKg, biaya,pajak,ttlBiaya;
+    float berat, biayaPerKg, biaya,pajak,ttl;
+    
+    
+    cout <<"<!--Soal No. 2-->\n";
     cout <<"Program Menghitung Biaya Ekspedisi\n";
-    cout <<"==========================================================\n";
-    cout <<"By : Junika Rizki\n\n";
+    cout <<"Created By : Junika Rizki\n\n";
+    cout <<"*************************************************************\n";
     cout <<"Masukkan Berat Barang ";
     cin >>berat;
     cout <<"Masukkan Biaya Per Kg ";
     cin >>biayaPerKg;
-    biaya = biayaPerKg * berat;
+    biaya = berat * biayaPerKg;
     pajak = biaya * 0.1;
-    ttlBiaya = biaya - pajak;
-    //system("cls");
-    cout <<"=========================================================="<<endl;
-    cout <<setprecision(10);
-    cout <<"\nBerat Barang = "<<berat <<"Kg" <<endl;
-    cout <<"Biaya Per Kg = Rp."<<biayaPerKg<<endl;
-    cout <<"Biaya Pengiriman Sebelum Pajak = Rp."<<biaya<<endl;
-    cout <<"Pajak = Rp."<<pajak<<endl;
-    cout <<"=========================================================="<<endl;
-    cout <<"Total Biaya Pengiriman Setelah Pajak = Rp."<<ttlBiaya<<endl;
-
+    ttl = biaya - pajak;
+    cout <<setprecision(10); //Jika menggunaka float, sebaiknya aktifkan ini dan <iomanip>
+    cout <<"_____________________________________________________________\n";
+    cout <<"| Berat barang                           = "<<berat <<" Kg"<<endl;
+    cout <<"| Biaya Pengiriman Per Kg                = Rp."<<biayaPerKg <<endl;
+    cout <<"|============================================================ x \n";
+    cout <<"| Biaya Pengiriman Sebelum Pajak         = Rp."<<biaya <<endl;
+    cout <<"| Pajak                                  = Rp."<<pajak <<endl;
+    cout <<"|============================================================ + \n";
+    cout <<"|\n";
+    cout <<"| Total Biaya Pengiriman                 = Rp."<<ttl <<endl;
+    cout <<"|                                         -------------------     \n";
+    cout <<"|____________________________________________________________";
     return 0;
+
 }
