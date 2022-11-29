@@ -5,9 +5,9 @@ using namespace std;
 int main() {
     int jmlHari,kamar = 250000, dokter = 65000;
     float pot, biayaKamar, ttlBiayaKamar, biayaDokter, ttl;
-    
-    
-    
+
+
+
     cout <<"<!--Soal No. 3-->\n";
     cout <<"Program Menghitung Biaya Rawat Inap\n";
     cout <<"Created By : Junika Rizki\n\n";
@@ -17,9 +17,9 @@ int main() {
     biayaKamar = jmlHari * kamar;
     pot = biayaKamar * 0.1;
     ttlBiayaKamar = biayaKamar - pot;
-    biayaDokter = jmlHari * dokter; 
+    biayaDokter = jmlHari * dokter;
     ttl = ttlBiayaKamar + biayaDokter;
-    cout <<setprecision(10); //Jika menggunaka float, sebaiknya aktifkan ini dan <iomanip>
+    cout <<setprecision(10); //Jika menggunakan float, sebaiknya aktifkan ini dan <iomanip>
     cout <<"_____________________________________________________________\n";
     cout <<"| Lama Hari Rawat Inap Pasien            = "<<jmlHari <<" Hari"<<endl;
     cout <<"| Biaya Kamar Per Hari                   = Rp."<<kamar <<endl;

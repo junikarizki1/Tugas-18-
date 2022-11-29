@@ -4,8 +4,8 @@ using namespace std;
 
 int main() {
     float berat, biayaPerKg, biaya,pajak,ttl;
-    
-    
+
+
     cout <<"<!--Soal No. 2-->\n";
     cout <<"Program Menghitung Biaya Ekspedisi\n";
     cout <<"Created By : Junika Rizki\n\n";
@@ -16,7 +16,7 @@ int main() {
     cin >>biayaPerKg;
     biaya = berat * biayaPerKg;
     pajak = biaya * 0.1;
-    ttl = biaya - pajak;
+    ttl = biaya + pajak;
     cout <<setprecision(10); //Jika menggunaka float, sebaiknya aktifkan ini dan <iomanip>
     cout <<"_____________________________________________________________\n";
     cout <<"| Berat barang                           = "<<berat <<" Kg"<<endl;
