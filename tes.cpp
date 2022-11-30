@@ -16,15 +16,15 @@ int main() {
     cout <<"*************************************************************\n";
     cout <<"Masukkan Golongan Pegawai ";
     cin >>gol;
-    
+
     cout <<"_____________________________________________________________\n";
-    if(gol == 'a') {
+    if(gol == 'a' || gol == 'A') {
         gaji = gaji + a;
          cout <<"| Gaji Pegawai Gol " <<gol <<"                        : Rp."<<gaji;
-    }else if(gol == 'b') {
+    }else if(gol == 'b' || gol == 'B') {
         gaji = gaji + b;
          cout <<"| Gaji Pegawai Gol " <<gol <<"                        : Rp."<<gaji;
-    }else if(gol == 'c') {
+    }else if(gol == 'c' || gol == 'C') {
         gaji = gaji + c;
          cout <<"| Gaji Pegawai Gol " <<gol <<"                        : Rp."<<gaji;
     }
