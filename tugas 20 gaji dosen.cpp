@@ -10,12 +10,16 @@ int main() {
     string gol, npwp;
     float pajak, ttlGaji;
 
-    cout <<"Masukkan Golongan Dosen\n";
+    cout <<"Masukkan Salah satu Golongan Dosen Dibawah Ini :\n";
+    cout <<"lektor kepala\n";
+    cout <<"lektor\n";
+    cout <<"asisten ahli\n";
+    cout <<"Tidak ada golongan\n\n";
     getline (cin, gol);
     cout <<"Masukkan Jumlah Sks Dosen Mengajar\n";
     cin >>sks;
     cout <<"Apakah Dosen Memiliki NPWP ?\n";
-    cout <<"Isikan 'ada' atau 'tidak'\n\n";
+    cout <<"Isikan 'ada' atau 'tidak'" <<endl;
     cin >>npwp;
 
 
@@ -41,7 +45,7 @@ int main() {
     }
 
     ttlGaji = gajiKtr - pajak;
-    cout <<"Golongan Dosen adalah               "<<gol <<endl;
+    cout <<"\nGolongan Dosen adalah               "<<gol <<endl;
     cout <<"Jumlah Sks Dosen                    "<<sks <<" Sks" <<endl;
     cout <<"Keterangan NPWP                     "<<npwp <<endl;
     cout <<"Gaji Dosen Per Sks                  Rp."<<gajiPsks <<endl;
