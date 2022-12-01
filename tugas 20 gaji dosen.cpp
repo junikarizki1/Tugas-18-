@@ -4,17 +4,15 @@ using namespace std;
 
 int main() {
 
-    int sks;
-    int gajiPsks=0;
-    int gajiKtr;
+    int sks, gajiPsks, gajiKtr;
     string gol, npwp;
     float pajak, ttlGaji;
 
     cout <<"Masukkan Salah satu Golongan Dosen Dibawah Ini :\n";
-    cout <<"lektor kepala\n";
-    cout <<"lektor\n";
-    cout <<"asisten ahli\n";
-    cout <<"Tidak ada golongan\n\n";
+    cout <<"'lektor kepala'\n";
+    cout <<"'lektor'\n";
+    cout <<"'asisten ahli'\n";
+    cout <<"'tidak ada golongan'\n\n";
     getline (cin, gol);
     cout <<"Masukkan Jumlah Sks Dosen Mengajar\n";
     cin >>sks;
@@ -24,16 +22,16 @@ int main() {
 
 
     if (gol == "lektor kepala") {
-        gajiPsks = gajiPsks + 40000;
+        gajiPsks = 40000;
         gajiKtr = gajiPsks * sks;
     }else if (gol == "lektor") {
-        gajiPsks = gajiPsks + 37000;
+        gajiPsks = 37000;
         gajiKtr = gajiPsks * sks;
     }else if (gol == "asisten ahli") {
-        gajiPsks = gajiPsks + 33000;
+        gajiPsks = 33000;
         gajiKtr = gajiPsks * sks;
     } else {
-        gajiPsks = gajiPsks + 28000;
+        gajiPsks = 28000;
         gajiKtr = gajiPsks * sks;
         gol = "Tidak Ada Golongan";
     }
