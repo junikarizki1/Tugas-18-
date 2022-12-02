@@ -7,7 +7,11 @@ int main() {
     int ak, tt, um, ua;
     float nAk, nTt, nUm, nUa, dpna;
     char grade;
-    
+
+    cout <<"<!--Soal No. 2-->\n";
+    cout <<"Program Menghitung Nilai DPNA Mahasiswa\n";
+    cout <<"Created By : Junika Rizki\n\n";
+    cout <<"*************************************************************\n";
     cout <<"Masukkan Nilai Aktivitas Kelas (0-100) ";
     cin >>ak;
     cout <<"Masukkan Nilai Tugas Terstruktur (0-100) ";
@@ -16,13 +20,13 @@ int main() {
     cin >>um;
     cout <<"Masukkan Nilai Ujian Akhir (0-100) ";
     cin >>ua;
-    
+
     nAk = ak * 0.1;
     nTt = tt * 0.2;
     nUm = um * 0.3;
     nUa = ua * 0.4;
     dpna = nAk + nTt + nUm + nUa;
-    
+
     if (dpna >=80.00 && dpna <=100.00 ) {
       grade = 'A';
     }else if (dpna >=70.00 && dpna <=79.99 ) {
@@ -34,13 +38,17 @@ int main() {
     }else if (dpna >=0.00 && dpna <=39.99 ) {
       grade = 'E';
     }
-
-    cout <<"\nTotal Nilai Aktivitas Kelas = "<<nAk;
-    cout <<"\nTotal Nilai Tugas Terstruktur = "<<nTt;
-    cout <<"\nTotal Nilai Ujian MID = "<<nUm;
-    cout <<"\nTotal Nilai Ujian Akhir = "<<nUa;
-    cout <<"\nTotal Nilai DPNA = "<<dpna;
-    cout <<"\nGrade = Grade "<<grade;
+    cout <<"_____________________________________________________________";
+    cout <<"\n| Total Nilai Aktivitas Kelas             = "<<nAk;
+    cout <<"\n| Total Nilai Tugas Terstruktur           = "<<nTt;
+    cout <<"\n| Total Nilai Ujian MID                   = "<<nUm;
+    cout <<"\n| Total Nilai Ujian Akhir                 = "<<nUa;
+    cout <<"\n|============================================================";
+    cout <<"\n|";
+    cout <<"\n| Total Nilai DPNA                            = "<<dpna;
+    cout <<"\n| Grade Yang Diperoleh Mahasiswa adalah       Grade "<<grade;
+    cout <<"\n|                                             ---------------\n";
+    cout <<"|____________________________________________________________";
 
     return 0;
 }
