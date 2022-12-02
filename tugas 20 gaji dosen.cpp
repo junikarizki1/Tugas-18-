@@ -8,11 +8,15 @@ int main() {
     string gol, npwp;
     float pajak, ttlGaji;
 
+    cout <<"<!--Soal No. 1-->\n";
+    cout <<"Program Menghitung Honor Dosen\n";
+    cout <<"Created By : Junika Rizki\n\n";
+    cout <<"*************************************************************\n";
     cout <<"Masukkan Salah satu Golongan Dosen Dibawah Ini :\n";
     cout <<"'lektor kepala'\n";
     cout <<"'lektor'\n";
     cout <<"'asisten ahli'\n";
-    cout <<"'tidak ada golongan'\n\n";
+    cout <<"'tidak ada golongan'\n";
     getline (cin, gol);
     cout <<"Masukkan Jumlah Sks Dosen Mengajar\n";
     cin >>sks;
@@ -43,13 +47,19 @@ int main() {
     }
 
     ttlGaji = gajiKtr - pajak;
-    cout <<"\nGolongan Dosen adalah               "<<gol <<endl;
-    cout <<"Jumlah Sks Dosen                    "<<sks <<" Sks" <<endl;
-    cout <<"Keterangan NPWP                     "<<npwp <<endl;
-    cout <<"Gaji Dosen Per Sks                  Rp."<<gajiPsks <<endl;
-    cout <<"Gaji Dosen Sebelum Pajak            Rp."<<gajiKtr <<endl;
-    cout <<"Pajak                               Rp."<<pajak <<endl;
-    cout <<"Total Gaji Dosen                    Rp."<<ttlGaji;
+    cout <<"_____________________________________________________________\n";
+    cout <<"| Golongan Dosen adalah               "<<gol <<endl;
+    cout <<"| Jumlah Sks Dosen                    "<<sks <<" Sks" <<endl;
+    cout <<"| Keterangan NPWP                     "<<npwp <<endl;
+    cout <<"|============================================================  \n";
+    cout <<"| Gaji Dosen Per Sks                  Rp."<<gajiPsks <<endl;
+    cout <<"| Gaji Dosen Sebelum Pajak            Rp."<<gajiKtr <<endl;
+    cout <<"| Pajak                               Rp."<<pajak <<endl;
+    cout <<"|============================================================  \n";
+    cout <<"|\n";
+    cout <<"| Total Gaji Dosen                    Rp."<<ttlGaji <<endl;
+    cout <<"|                                     ---------------     \n";
+    cout <<"|____________________________________________________________";
 
 
 
