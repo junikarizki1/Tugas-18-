@@ -4,9 +4,16 @@ using namespace std;
 
 int main() {
   
-  int kenGaji;
+  int gajiL, gajiB, kenGaji;
   string grade;
   double terlambat, sakit, izin, alpha, tbobot, sbobot, ibobot, abobot, ikp;
+  cout <<"<!--Soal No. 2-->\n";
+    cout <<"Program Menghitung Indeks Kerja Pegawai\n";
+    cout <<"Created By : Junika Rizki\n\n";
+    cout <<"*************************************************************\n";
+
+  cout <<"Masukkan Gaji Pegawai ";
+  cin >>gajiL;
   cout <<"Masukkan Jumlah Keterlambatan (Menit) ";
   cin >>terlambat;
   cout <<"Masukkan Jumlah Hari Sakit ";
@@ -90,6 +97,8 @@ int main() {
     grade = "Deadwood";
     kenGaji = 0;
   }
+  
+  gajiB = gajiL + kenGaji;
 
   cout <<"\nBobot Keterlambatan = "<<tbobot;   
   cout <<"\nBobot Sakit         = "<<sbobot;
@@ -97,7 +106,9 @@ int main() {
   cout <<"\nBobot Alpha         = "<<abobot;
   cout <<"\nIKP                 = "<<ikp;
   cout <<"\nGrade               = "<<grade;
-  cout <<"\nJumlah Kenaikan Gaji Karyawan Rp."<<kenGaji;
+  cout <<"\nGaji Lama Karyawan            Rp."<<gajiL;
+  cout <<"\nKenaikan Gaji Karyawan        Rp."<<kenGaji;
+  cout <<"\nGaji Terbaru Karyawan         Rp."<<gajiB;
  
     return 0;
 }
