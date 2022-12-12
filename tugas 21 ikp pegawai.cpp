@@ -7,7 +7,7 @@ int main() {
   int gajiL, gajiB, kenGaji;
   string grade;
   double terlambat, sakit, izin, alpha, tbobot, sbobot, ibobot, abobot, ikp;
-  cout <<"<!--Soal No. 2-->\n";
+  cout <<"<!--Tugas 21-->\n";
     cout <<"Program Menghitung Indeks Kerja Pegawai\n";
     cout <<"Created By : Junika Rizki\n\n";
     cout <<"*************************************************************\n";
