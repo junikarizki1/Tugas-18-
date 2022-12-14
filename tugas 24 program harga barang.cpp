@@ -1,36 +1,33 @@
 #include <iostream>
-
 using namespace std;
+int main() {
 
-int main()
-{
-    cout <<"<!--Tugas 24 Soal No.1-->\n";
-    cout <<"Program Menghitung Tinggi Badan Siswa\n";
+    cout <<"<!--Tugas 24 Soal No.2-->\n";
+    cout <<"Program Menghitung Total Harga\n";
     cout <<"Created By : Junika Rizki\n\n";
     cout <<"*************************************************************\n";
 
-    int harga_satuan, kuantitas, total_harga;
-    int x = 1;
-
+    int hrg, qty, total;
+    int i = 1;
     do {
-        cout << "Inputkan Bararng ke-" << x << endl;
+        cout << "Inputkan Bararng ke-" << i << endl;
         cout << "     Harga Satuan : ";
-        cin >> harga_satuan;
+        cin >> hrg;
         cout << "     Kuantitas    : ";
-        cin >> kuantitas;
+        cin >> qty;
         cout << " " << endl;
-        total_harga += harga_satuan * kuantitas;
-        x++;
-
-
-        if (harga_satuan == 0 || kuantitas == 0) {
+        total += hrg * qty;
+        i++;
+        if (hrg == 0 || qty == 0) {
             break;
         }
-    } while (x > 0);
+    } while (i > 0);
 
     cout << " " << endl;
     cout << "====================================\n" << endl;
-    cout << "Total Harganya Adalah : RP " << total_harga << endl;
+    cout << "Total Harganya Adalah : RP " << total << endl;
 
     return 0;
+
 }
+
