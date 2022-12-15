@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+int main(){
+
+    cout <<"<!--Tugas 24 Soal No.1-->\n";
+    cout <<"Program Menghitung Tinggi Badan Siswa\n";
+    cout <<"Created By : Junika Rizki\n\n";
+    cout <<"*************************************************************\n";
+
+    int n;
+    float tinggi, total = 0, avg, mini;
+    cout <<"Masukkan Jumlah Siswa ";
+    cin >>n;
+    cout <<"Inputkan Tinggi Badan Siswa Ke-1 " <<endl;
+    cin >>tinggi;
+         mini = tinggi;
+
+    for (int i = 2; i <= n; i++) {
+        cout <<"Inputkan Tinggi Badan Siswa Ke-"<<i <<endl;
+        cin >>tinggi;
+        total = total + tinggi;
+        if(tinggi < mini) {
+            mini = tinggi;
+        }
+    }
+
+    avg = total / n;
+    cout <<"\n\nRata-rata Tinggi Badan Siswa : "<<avg <<endl;
+    cout <<"Tinggi Badan Paling Rendah   : "<<mini <<endl;
+    cout <<"============================================================";
+return 0;
+}
