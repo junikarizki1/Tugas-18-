@@ -1,0 +1,130 @@
+#include <iostream>
+using namespace std;
+int main () {
+
+cout <<"Tugas 23 Looping Statement\n";
+cout <<"Created By Junika Rizki\n";
+cout <<"==============================\n\n";
+
+cout <<"The for statement\n";
+int n;
+  cout <<"Masukkan nilai n ";
+  cin >>n;
+
+for (int i = 8; i >=2; i--) {
+    cout << i << " ";
+  } cout <<endl;
+
+  for (int i = 3; i<=21; i+= 3) {
+      cout <<i <<" ";
+  } cout <<endl;
+
+  for (int i = 40; i >=20; i-= 4) {
+      cout <<i <<" ";
+  } cout <<endl;
+
+  for (int i = 5; i <=45; i+= 5) {
+      cout <<i <<" ";
+  } cout <<endl;
+
+  for (int i = 90; i >=0; i-=10) {
+      cout <<i <<" ";
+  } cout <<endl;
+
+
+  for (int i = 2; i <=n; i+= 2) {
+      cout <<i <<" ";
+  } cout <<endl;
+cout <<"==============================\n\n";
+
+cout <<"The while statement\n";
+int y=8;
+    while (y>=2) {
+        cout <<y <<" ";
+        y--;
+    } cout <<endl;
+
+    y=3;
+    while (y<=21) {
+        cout <<y <<" ";
+        y+=3;
+    } cout <<endl;
+
+    y=40;
+    while (y>=20) {
+       cout <<y <<" ";
+        y-=4;
+    }  cout <<endl;
+
+     y=5;
+    while (y<=45) {
+        cout <<y <<" ";
+        y+=5;
+    } cout <<endl;
+
+    y=90;
+    while (y>=0) {
+       cout <<y <<" ";
+        y-=10;
+    }  cout <<endl;
+
+    y=2;
+    while (y<=n) {
+        cout <<y <<" ";
+        y+=2;
+    } cout <<endl;
+cout <<"==============================\n\n";
+
+cout <<"The do while statement\n";
+int i;
+    i = 8;
+    do {
+        cout <<i <<" ";
+        i--;
+    }
+    while (i >=2);
+    cout <<endl;
+
+    i = 3;
+    do {
+        cout <<i <<" ";
+        i+=3;
+    }
+    while (i <=21);
+    cout <<endl;
+
+    i = 40;
+    do {
+        cout <<i <<" ";
+        i-=4;
+    }
+    while (i >=20);
+    cout <<endl;
+
+    i = 5;
+    do {
+        cout <<i <<" ";
+        i +=5;
+    }
+    while (i <=45);
+    cout <<endl;
+
+    i = 90;
+    do {
+        cout <<i <<" ";
+        i -=10;
+    }
+    while (i >=0);
+    cout <<endl;
+
+     i = 2;
+    do {
+        cout <<i <<" ";
+        i +=2;
+    }
+    while (i <=n);
+    cout <<endl;
+cout <<"==============================\n\n";
+
+return 0;
+}
